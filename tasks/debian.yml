@@ -1,7 +1,7 @@
 ---
 - name: adding repo for ruby
   apt_repository:
-    repo: ppa:brightbox/ruby-ng"
+    repo: "ppa:brightbox/ruby-ng"
     state: present
 
 - name: installing pre-reqs
