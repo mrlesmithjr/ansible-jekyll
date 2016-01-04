@@ -1,0 +1,10 @@
+---
+- name: provision jekyll
+  hosts: all
+  remote_user: vagrant
+  sudo: yes
+  vars:
+  roles:
+    - role: ansible-jekyll
+  tasks:
+
