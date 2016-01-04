@@ -1,0 +1,20 @@
+---
+- name: installing pre-reqs
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - gcc
+    - git
+    - make
+    - nodejs
+    - ruby
+    - ruby-dev
+
+- name: installing jekyll
+  gem:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - jekyll
+    - github-pages
