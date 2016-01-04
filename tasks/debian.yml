@@ -1,4 +1,9 @@
 ---
+- name: adding repo for ruby
+  apt_repository:
+    repo: ppa:brightbox/ruby-ng"
+    state: present
+
 - name: installing pre-reqs
   apt:
     name: "{{ item }}"
@@ -8,13 +13,14 @@
     - git
     - make
     - nodejs
-    - ruby
-    - ruby-dev
+    - ruby2.2
+    - ruby2.2-dev
 
 - name: installing Ruby Gems
   gem:
     name: "{{ item }}"
     state: present
+    user_install: no
   sudo: false
   with_items:
     - jekyll
