@@ -11,10 +11,11 @@
     - ruby
     - ruby-dev
 
-- name: installing jekyll
+- name: installing Ruby Gems
   gem:
     name: "{{ item }}"
     state: present
+  sudo: false
   with_items:
     - jekyll
     - github-pages
