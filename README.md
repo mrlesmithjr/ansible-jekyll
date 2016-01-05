@@ -27,6 +27,22 @@ Spin up Docker container for testing (With NGINX)
 docker run -d -p 80:80 -p 4000:4000 mrlesmithjr/jekyll
 ````
 
+Test-Site
+---------
+In order to just test out Jekyll you can do the following either in Docker container or Vagrant Box.
+````
+cd ~
+jekyll new test-site
+cd test-site
+jekyll build
+sudo cp -R _site/* /usr/share/nginx/html
+````
+Using your browser:
+###### Vagrant
+http://localhost:8080
+###### Docker
+http://localhost:80
+
 Role Variables
 --------------
 
