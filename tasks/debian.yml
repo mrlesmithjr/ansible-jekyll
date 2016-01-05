@@ -23,7 +23,18 @@
     name: "{{ item }}"
     state: present
     user_install: no
-  sudo: false
+#  sudo: false
   with_items:
     - jekyll
+    - jekyll-import
     - github-pages
+
+- name: installing jekyll import gems (If defined)
+  gem:
+    name: "{{ item.1 }}"
+    state: present
+    user_install: no
+  with_subelements:
+    - jekyll_importers
+    - gems
+  when: item.0 is defined

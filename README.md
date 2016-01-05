@@ -46,7 +46,17 @@ http://localhost:80
 Role Variables
 --------------
 
-None
+````
+---
+# defaults file for ansible-jekyll
+jekyll_importers:  #define specific gems required to be installed for the specific importer type
+  - name: wordpress
+    gems:
+      - unidecode
+      - sequel
+      - mysql2
+      - htmlentities
+````
 
 Dependencies
 ------------
