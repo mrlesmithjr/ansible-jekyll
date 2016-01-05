@@ -5,6 +5,7 @@
   sudo: yes
   vars:
   roles:
+    - role: ansible-nginx
     - role: ansible-jekyll
   tasks:
 

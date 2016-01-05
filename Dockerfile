@@ -30,4 +30,4 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 #Expose ports
 EXPOSE 80 4000
 
-#CMD ["jekyll", "serve"]
+CMD ["nginx", "-g", "daemon off;"]

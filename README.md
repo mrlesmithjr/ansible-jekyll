@@ -22,9 +22,9 @@ vagrant up
 
 Docker
 ------
-Spin up Docker container for testing
+Spin up Docker container for testing (With NGINX)
 ````
-docker run -it mrlesmithjr/jekyll bash
+docker run -d -p 80:80 -p 4000:4000 mrlesmithjr/jekyll
 ````
 
 Role Variables
@@ -35,7 +35,7 @@ None
 Dependencies
 ------------
 
-None
+ansible-nginx (Installed as part of requirements.yml)
 
 Example Playbook
 ----------------
