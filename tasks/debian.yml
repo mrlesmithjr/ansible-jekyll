@@ -9,12 +9,14 @@
     name: "{{ item }}"
     state: present
   with_items:
+    - build-essential
     - gcc
     - git
     - make
     - nodejs
     - ruby2.2
     - ruby2.2-dev
+    - zlib1g-dev
 
 - name: installing Ruby Gems
   gem:

@@ -5,7 +5,8 @@ FROM mrlesmithjr/ubuntu-ansible
 MAINTAINER mrlesmithjr@gmail.com
 
 #Install packages
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && \ 
+    apt-get install -y git 
 
 #Create Ansible Folder
 RUN mkdir -p /opt/ansible-playbooks/roles
