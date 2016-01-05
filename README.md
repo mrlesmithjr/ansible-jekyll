@@ -20,6 +20,13 @@ Spin up Environment under Vagrant to test.
 vagrant up
 ````
 
+Docker
+------
+Spin up Docker container for testing
+````
+docker run -it mrlesmithjr/jekyll bash
+````
+
 Role Variables
 --------------
 
