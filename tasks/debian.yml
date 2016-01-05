@@ -12,6 +12,7 @@
     - build-essential
     - gcc
     - git
+    - libmysqlclient-dev
     - make
     - nodejs
     - ruby2.2
