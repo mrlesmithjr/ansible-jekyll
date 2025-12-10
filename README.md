@@ -1,3 +1,12 @@
+# ⚠️ ARCHIVED - No Longer Maintained
+
+> **This repository has been archived and is no longer maintained.**
+> Last updated: 2016. The role may not work with current versions of Jekyll, Ruby, or Ansible.
+> 
+> For modern Jekyll deployments, consider using containers or GitHub Pages directly.
+
+---
+
 Role Name
 =========
 
